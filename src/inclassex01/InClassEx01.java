@@ -5,6 +5,8 @@ public class InClassEx01 {
     
     public static void main(String[] args) {
         
+        //This is a comment made on GitHub's edit feature
+        
         int[] temperatures = new int[14];
         for(int i = 0; i < temperatures.length; i++){
             temperatures[i] = (int)(Math.random() * 201) - 100;
