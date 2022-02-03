@@ -17,6 +17,8 @@ public class InClassEx01 {
         }
         
         System.out.println("Average temperature: " + calcAvg(temperatures));
+        
+        System.out.println("Maximum Temperature: " + calcMax(temperatures));
     }
     
     public static double calcAvg(int[] temps){
@@ -28,5 +30,17 @@ public class InClassEx01 {
             }   
         } 
         return (double)avg/temps.length;
+    }
+    
+    public static int calcMax(int[] temps){
+        int max = temps[0];
+        
+        for(int i = 0; i < temps.length; i++){
+            if(max < temps[i]){
+                max = temps[i];
+            }
+        }
+        
+        return max;
     }
 }
